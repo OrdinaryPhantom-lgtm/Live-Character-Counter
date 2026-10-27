@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap");
+
+* { box-sizing: border-box; }
+
+/* Full-page ocean photo with a teal tint */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  font-family: "DM Sans", "Segoe UI", Arial, sans-serif;
+  color: #fff;
+  background:
+    linear-gradient(160deg, rgba(0, 70, 80, 0.55), rgba(0, 25, 40, 0.8)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80")
+    center / cover no-repeat fixed;
+  background-color: #08323c; /* fallback if the image doesn't load */
+}
+
+/* Open, centered layout: no card around it */
+.app {
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 0 0 32px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Frosted writing area */
+textarea {
+  width: 100%;
+  height: 180px;
+  padding: 20px 22px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #fff;
+  resize: none;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+textarea::placeholder { color: rgba(255, 255, 255, 0.55); }
+
+textarea:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Counter */
+.count {
+  margin: 20px 0 0;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#chars {
+  margin-right: 4px;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 40px;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+@media (max-width: 520px) {
+  h1 { font-size: 38px; }
+  textarea { height: 150px; font-size: 16px; }
+}
