@@ -2,7 +2,7 @@
 
 A text box with a character count that updates live, with every key you press.
 
-**Live demo:** https://YOUR-USERNAME.github.io/live-character-counter/
+**Live demo:**  https://ordinaryphantom-lgtm.github.io/Live-Character-Counter/
 
 ![Live Character Counter screenshot](Character-Counter.png)
 
